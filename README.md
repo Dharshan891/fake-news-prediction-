@@ -1,6 +1,6 @@
 # 📰 Fake News Prediction Using Machine Learning
 
-A Machine Learning-based web application that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) techniques and Logistic Regression.
+Fake News Prediction is a Machine Learning project that uses NLP techniques and Logistic Regression to classify news articles as Real or Fake. The model is trained on labeled news data and can predict the authenticity of new articles through a Python-based prediction script.
 
 ## 📖 Overview
 
