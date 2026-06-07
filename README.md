@@ -29,25 +29,25 @@ With the rapid spread of misinformation online, identifying fake news has become
 
 ## 📂 Project Structure
 
-```text
 fake-news-prediction/
 │
 ├── data/
-│   └── fake_news_sample_dataset.csv
-│
-├── models/
-│   ├── fake_news_model.pkl
-│   └── tfidf_vectorizer.pkl
+│   └── news/
+│       ├── Fake.csv
+│       └── True.csv
 │
 ├── src/
 │   ├── preprocessing.py
 │   ├── train.py
 │   └── predict.py
 │
+├── models/
+│   ├── fake_news_model.pkl
+│   └── tfidf_vectorizer.pkl
+│
 ├── requirements.txt
 ├── README.md
-└── .gitignore
-```
+├── .gitignore
 
 ## 📊 Machine Learning Pipeline
 
@@ -136,6 +136,8 @@ or
 ```text
 Prediction: Fake News ❌
 ```
+Dataset:
+https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
 
 ## 👨‍💻 Team Members
 
