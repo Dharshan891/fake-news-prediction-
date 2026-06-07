@@ -29,6 +29,9 @@ With the rapid spread of misinformation online, identifying fake news has become
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```
 fake-news-prediction/
 │
 ├── data/
@@ -48,6 +51,7 @@ fake-news-prediction/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+```
 
 ## 📊 Machine Learning Pipeline
 
