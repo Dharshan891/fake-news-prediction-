@@ -1,37 +1,55 @@
-# fake-news-prediction-
 # 📰 Fake News Prediction Using Machine Learning
 
-## 📌 Project Overview
+A Machine Learning-based web application that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) techniques and Logistic Regression.
 
-Fake News Prediction is a Machine Learning project that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) techniques. The system analyzes the text content of news articles and predicts their authenticity.
+## 📖 Overview
 
-## 🎯 Objectives
+With the rapid spread of misinformation online, identifying fake news has become increasingly important. This project leverages NLP and Machine Learning to analyze news content and predict whether an article is genuine or fake.
 
-- Detect fake news articles automatically.
-- Apply NLP techniques for text preprocessing.
-- Train a Machine Learning model for classification.
-- Improve information reliability and reduce misinformation.
+## ✨ Features
+
+* News authenticity prediction (Real/Fake)
+* Text preprocessing using NLTK
+* TF-IDF feature extraction
+* Logistic Regression classifier
+* Model evaluation with accuracy metrics
+* Easy-to-use prediction script
+* Modular project structure
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
-- TF-IDF Vectorizer
-- Logistic Regression
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* NLTK
+* Joblib
+* TF-IDF Vectorizer
+* Logistic Regression
 
-## 📂 Dataset
+## 📂 Project Structure
 
-The dataset contains:
-- News Title
-- News Content
-- Labels (Real / Fake)
+```text
+fake-news-prediction/
+│
+├── data/
+│   └── fake_news_sample_dataset.csv
+│
+├── models/
+│   ├── fake_news_model.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── train.py
+│   └── predict.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
-Dataset is preprocessed before training the model.
-
-## ⚙️ Project Workflow
+## 📊 Machine Learning Pipeline
 
 1. Data Collection
 2. Data Cleaning
@@ -39,71 +57,104 @@ Dataset is preprocessed before training the model.
 4. Feature Extraction using TF-IDF
 5. Model Training
 6. Model Evaluation
-7. News Prediction
+7. Fake News Prediction
 
-## 🤖 Machine Learning Model
+## 🤖 Model Details
 
-**Algorithm Used:**
-- Logistic Regression
+### Algorithm
 
-**Feature Extraction:**
-- TF-IDF (Term Frequency – Inverse Document Frequency)
+* Logistic Regression
 
-## 📊 Results
+### Feature Extraction
 
-The model successfully classifies news articles as:
+* TF-IDF Vectorization
 
-- ✅ Real News
-- ❌ Fake News
+### Evaluation Metrics
 
-Performance is evaluated using:
-- Accuracy Score
-- Confusion Matrix
-- Classification Report
+* Accuracy Score
+* Confusion Matrix
+* Classification Report
 
-## 🚀 Installation
+## 🚀 Installation & Setup
 
-Clone the repository:
+### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Fake-News-Prediction.git
+git clone https://github.com/Dharshan891/fake-news-prediction.git
+cd fake-news-prediction
 ```
 
-Navigate to the project folder:
+### Create Virtual Environment
 
 ```bash
-cd Fake-News-Prediction
+python -m venv venv
 ```
 
-Install dependencies:
+### Activate Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the project:
+## ▶️ Train the Model
 
 ```bash
-python app.py
+python src/train.py
+```
+
+## 🔍 Predict News
+
+```bash
+python src/predict.py
+```
+
+## 📈 Sample Output
+
+```text
+Enter News Article:
+Breaking news article text...
+
+Prediction: Real News ✅
+```
+
+or
+
+```text
+Prediction: Fake News ❌
 ```
 
 ## 👨‍💻 Team Members
 
-- T.C. Dharshan (2023006380)
-- D. Mukesh (2023003986)
-- Sameer (2023004759)
+* T. C. Dharshan (2023006380)
+* D. Mukesh (2023003986)
+* Sameer (2023004759)
 
 ## 🔮 Future Enhancements
 
-- Deep Learning Models (LSTM, BERT)
-- Real-time News Verification
-- Web Application Deployment
-- API Integration for Live News Analysis
+* Deep Learning Models (LSTM, BERT)
+* Real-Time News Verification
+* Web Application Deployment
+* REST API Integration
+* News Source Credibility Analysis
 
 ## 📜 License
 
 This project is developed for educational and research purposes.
 
----
+## ⭐ Support
 
-⭐ If you found this project useful, please give it a star on GitHub.
+If you found this project helpful, please consider giving it a star on GitHub.
